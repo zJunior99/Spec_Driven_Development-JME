@@ -24,20 +24,23 @@ go test ./... -v
 
 ```
 ├── api/
-│   └── openapi.yaml          # API specification (contract)
+│   └── openapi.yaml               # API specification (contract)
 ├── cmd/
-│   └── main.go               # Entry point
+│   └── main.go                    # Entry point
 ├── internal/
 │   ├── payment/
-│   │   ├── payment.go        # Domain & service
+│   │   ├── payment.go             # Domain & service
 │   │   ├── payment_suite_test.go  # Ginkgo suite
 │   │   └── payment_spec_test.go   # Behavior specs
 │   └── repository/
-│       └── inmemory.go       # In-memory repository
+│       ├── inmemory.go            # In-memory repository
+│       └── inmemory_test.go       # Repository tests
 └── .github/workflows/
-    └── ci.yml                # CI/CD pipeline
+└── ci.yml                     # CI/CD pipeline
 ```
 
 ## Article
 
-[Spec Driven Development in Go: The Contract First, Then the Code](#)
+[Spec Driven Development in Go: The Contract First, Then the Code](https://medium.com/@jm2022075474/spec-driven-development-in-go-the-contract-first-then-the-code-5fb359c053b6)
+
+### Estudiante: Junior Mamani Estaña
